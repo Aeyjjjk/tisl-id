@@ -1,8 +1,8 @@
 :root {
-    --primary: #4f46e5;
-    --primary-light: #6366f1;
-    --primary-dark: #4338ca;
-    --success: #10b981;
+    --primary: #1e3a8a; /* Dark Blue */
+    --primary-light: #3b82f6;
+    --primary-dark: #1e40af;
+    --success: #10b981; /* Green */
     --warning: #f59e0b;
     --danger: #ef4444;
     --bg: #f8fafc;
@@ -23,7 +23,10 @@
 
 body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
+    background-image: url('company-logo.png'); /* Add company logo as background */
+    background-size: cover; /* Ensure logo covers the background */
+    background-blend-mode: overlay; /* Blend logo with background color */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white overlay */
     color: var(--text);
     line-height: 1.5;
     display: flex;
@@ -230,7 +233,7 @@ body {
 }
 
 .skill-tag {
-    background: var(--primary-light);
+    background: var(--success); /* Green */
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
@@ -283,7 +286,7 @@ body {
 }
 
 .btn-outline:hover {
-    background: rgba(79, 70, 229, 0.1);
+    background: rgba(30, 58, 138, 0.1);
 }
 
 /* Responsive */
