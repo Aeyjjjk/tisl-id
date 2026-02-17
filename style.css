@@ -16,8 +16,6 @@
 
 body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
-  background: linear-gradient(135deg, #3CB371, #1e3a8a),
-    url('tpaul_logo.png') center/contain no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -25,21 +23,27 @@ body {
   padding: 2rem;
   color: var(--text-dark);
   position: relative;
+  overflow-x: hidden;
+
+  /* Gradient only */
+  background: linear-gradient(135deg, #3CB371, #1e3a8a);
 }
 
-body::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('tpaul_logo.png') center/20% no-repeat;
-  opacity: 0.1;
-  z-index: -1;
+/* Watermark Logo Layer */
+body::before {
+  background-size: min(420px, 70vw);
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("tpaul_logo.png") center 40% / 420px no-repeat;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .employee-profile {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 300px 1fr;
   width: 100%;
