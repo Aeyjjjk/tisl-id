@@ -1,7 +1,7 @@
 :root {
   --primary: #2E8B57; /* Green */
   --primary-dark: #003366; /* Dark Blue */
-  --accent: #3CB371; /* Medium Sea Green */
+  --accent: #3CB371;
   --white: #FFFFFF;
   --light-bg: rgba(255, 255, 255, 0.9);
   --text-dark: #333333;
