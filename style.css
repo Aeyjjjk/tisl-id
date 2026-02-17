@@ -31,11 +31,11 @@ body {
 
 /* Watermark Logo Layer */
 body::before {
-  background-size: min(420px, 70vw);
+  background-size: min(900px, 70vw);
   content: "";
   position: fixed;
   inset: 0;
-  background: url("tpaul_logo.png") center 40% / 420px no-repeat;
+  background: url("tpaul_logo.png") center 40% / 900px no-repeat;
   opacity: 0.08;
   pointer-events: none;
   z-index: 0;
