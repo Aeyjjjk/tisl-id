@@ -2,36 +2,117 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Employee Profile</title>
+    <title>Employee Profile | Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="card">
-
-    <div class="profile-header">
-        <!-- Replace image.jpg with your employee photo -->
-        <img src="My corporate headshot.jpeg" alt="Employee Photo" class="profile-img">
-        <h1>John Doe</h1>
-        <p class="position">Senior Systems Engineer</p>
-        <span class="status active">Active</span>
-    </div>
-
-    <div class="profile-body">
-        <div class="info">
-            <h3>Employee Details</h3>
-            <p><strong>Staff ID:</strong> EMP-2026-001</p>
-            <p><strong>Department:</strong> Engineering</p>
-            <p><strong>Email:</strong> john.doe@company.com</p>
-            <p><strong>Phone:</strong> +234 800 000 0000</p>
+<div class="profile-card">
+    <!-- Sidebar with profile info -->
+    <div class="profile-sidebar">
+        <img src="My corporate headshot.jpeg" alt="John Doe" class="profile-avatar">
+        <h1 class="profile-name">John Doe</h1>
+        <p class="profile-title">Senior Systems Engineer</p>
+        
+        <div class="profile-status">
+            <span class="status-dot"></span>
+            <span>Active</span>
+        </div>
+        
+        <div class="profile-contact">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                john.doe@company.com
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                +234 800 000 0000
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                Lagos, Nigeria
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
         </div>
     </div>
-
-    <div class="footer">
-        <p>© 2026 Company Name. All rights reserved.</p>
+    
+    <!-- Main content area -->
+    <div class="profile-content">
+        <h2 class="section-title">
+            <i class="fas fa-id-card"></i>
+            Employee Details
+        </h2>
+        
+        <div class="details-grid">
+            <div class="detail-card">
+                <div class="detail-label">Employee ID</div>
+                <div class="detail-value">EMP-2026-001</div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-label">Department</div>
+                <div class="detail-value">Engineering</div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-label">Manager</div>
+                <div class="detail-value">Jane Smith</div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-label">Date of Employment</div>
+                <div class="detail-value">January 15, 2026</div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-label">Employment Type</div>
+                <div class="detail-value">Full-Time</div>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-label">Branch / Location</div>
+                <div class="detail-value">Lagos Headquarters</div>
+            </div>
+        </div>
+        
+        <div class="skills-section">
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                Technical Skills
+            </h2>
+            
+            <div class="skills-list">
+                <span class="skill-tag">Cloud Architecture</span>
+                <span class="skill-tag">DevOps</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">CI/CD</span>
+            </div>
+        </div>
+        
+        <div class="profile-footer">
+            <div>© 2026 Company Name. All rights reserved.</div>
+            <div class="action-buttons">
+                <button class="btn btn-outline">
+                    <i class="fas fa-download"></i>
+                    Export
+                </button>
+                <button class="btn btn-primary">
+                    <i class="fas fa-pencil-alt"></i>
+                    Edit Profile
+                </button>
+            </div>
+        </div>
     </div>
-
 </div>
 
 </body>
