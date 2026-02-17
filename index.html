@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Employee Profile | TISL</title>
 
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Stylesheet -->
@@ -14,41 +14,84 @@
 </head>
 <body>
 
-<div class="employee-profile">
-    <!-- Left Panel -->
-    <div class="profile-left">
-        <div class="avatar-wrap">
-            <img src="My corporate headshot.jpeg" alt="Profile photo" class="profile-photo">
-            <span class="status-dot"></span>
+<div class="employee-profile-container">
+    <div class="profile-header">
+        <div class="company-logo">
+            <div class="logo-circle"></div>
+            <h1>TISL</h1>
         </div>
-        <h1 class="profile-name">ANOMFUEME LYDIA ISIOMA</h1>
-        <p class="profile-role">Admin Manager</p>
-
-        <div class="contact-info">
-            <div><i class="fas fa-envelope"></i>a.lydia@tpaulintegrated.com</div>
-            <div><i class="fas fa-phone-alt"></i> +234 915 4316 801</div>
-            <div><i class="fas fa-map-marker-alt"></i> Rivers State, Nigeria</div>
-        </div>
-
-       
+        <h2>Employee Profile</h2>
     </div>
 
-    <!-- Right Panel -->
-    <div class="profile-right">
-        <h2><i class="fas fa-id-card"></i> Employee Details</h2>
-
-        <div class="details">
-            <div><span>Employee ID</span><p>TP1018</p></div>
-            <div><span>Department</span><p>Administration</p></div>
-            <div><span>Manager</span><p>Anthong Usongo</p></div>
-            <div><span>Date of Employment</span><p>Febuary 9, 2023 </p></div>
-            <div><span>Employment Type</span><p>Full-Time</p></div>
-            <div><span>Branch / Location</span><p>PHC Office</p></div>
+    <div class="profile-content">
+        <!-- Profile Picture Section -->
+        <div class="profile-picture-section">
+            <div class="avatar-container">
+                <img src="My corporate headshot.jpeg" alt="Profile photo" class="profile-photo">
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span>Active</span>
+                </div>
+            </div>
         </div>
 
-        <footer>
-            <p>© 2026 TPAUL Integrated Services LTD. | Admin Support: admin@tpaulintegrated.com</p>
-        </footer>
+        <!-- Personal Info Section -->
+        <div class="personal-info">
+            <div class="name-title">
+                <h1>ANOMFUEME LYDIA ISIOMA</h1>
+                <p class="profile-role"><span>Admin Manager</span> | TISL</p>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>lydia.anomfueme@tisl.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+234 800 000 0000</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Lagos, Nigeria</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Details Section -->
+        <div class="professional-details">
+            <div class="details-grid">
+                <div class="detail-card">
+                    <span class="detail-label">Employee ID</span>
+                    <p class="detail-value">EMP-2026-001</p>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Department</span>
+                    <p class="detail-value">Administration</p>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Reporting To</span>
+                    <p class="detail-value">Jane Smith (CEO)</p>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Date of Employment</span>
+                    <p class="detail-value">January 15, 2026</p>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Employment Type</span>
+                    <p class="detail-value">Full-Time</p>
+                </div>
+                <div class="detail-card">
+                    <span class="detail-label">Office Location</span>
+                    <p class="detail-value">Lagos Headquarters</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <p>© 2026 TISL. All rights reserved.</p>
+        <p class="employee-id">Employee ID: EMP-2026-001</p>
     </div>
 </div>
 
